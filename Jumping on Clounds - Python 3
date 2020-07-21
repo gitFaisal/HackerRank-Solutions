@@ -6,16 +6,16 @@ Challenge: Jumping on the Clouds: Revisited<br>
 
 
 
-def jumpingOnClouds(c, k):<br>
-    energy = 100<br>
-    index = 0<br>
-    while True:<br>
-        if c[index]==1:<br>
-            energy -= 3<br>
-        else:<br>
-            energy -= 1<br>
-        index = (index+k) % n<br>
-        if index==0:<br>
-            break<br>
+def jumpingOnClouds(c, k):
+    energy = 100
+    index = 0
+    while True:
+        if c[index]==1:
+            energy -= 3
+        else:
+            energy -= 1
+        index = (index+k) % n
+        if index==0:
+            break
 
-    return energy<br>
+    return energy
