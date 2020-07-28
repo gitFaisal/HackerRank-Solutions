@@ -2,8 +2,6 @@
               2D Array - DS
 *-----------------------------------------------*
 
-
-
 def hourglassSum(arr):
     maxSum = -63
     for i in range(4):
