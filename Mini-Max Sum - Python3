@@ -1,0 +1,8 @@
+*----------------------------------------------------*
+            Challenge: Mini-Max Sum
+*----------------------------------------------------*
+
+def miniMaxSum(arr):
+    mini = sum(arr) - max(arr)
+    maxx = sum(arr) - min(arr)
+    print mini, maxx
