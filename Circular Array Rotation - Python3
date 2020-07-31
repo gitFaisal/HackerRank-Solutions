@@ -1,0 +1,14 @@
+*----------------------------------------------------*
+    Challenge: Circular Array Rotation
+*----------------------------------------------------*
+
+def circularArrayRotation(a, k, queries):
+    queries_matched = []
+    while k > 0:
+        a.insert(0, a[-1])
+        a.pop()
+        k -= 1 
+    for i in queries:
+        matched = a[i]
+        queries_matched.append(matched)
+    return queries_matched
