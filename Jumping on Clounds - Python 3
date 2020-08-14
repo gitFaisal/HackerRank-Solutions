@@ -1,6 +1,6 @@
 
 *----------------------------------------------------*
-    Challenge: Jumping on the Clouds: Revisited
+         Jumping on the Clouds: Revisited
 *----------------------------------------------------*
 
 def jumpingOnClouds(c, k):
