@@ -1,0 +1,10 @@
+*-----------------------------------------------*
+           Strings: Making Anagrams
+*-----------------------------------------------*
+
+def makeAnagram(a, b):
+    count_a = Counter(a)
+    count_b = Counter(b)
+    dif_a = count_a - count_b
+    dif_b = count_b - count_a
+    return sum(dif_a.values()) + sum(dif_b.values())  
