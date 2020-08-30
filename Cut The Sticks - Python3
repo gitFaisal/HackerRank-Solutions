@@ -1,0 +1,13 @@
+*-----------------------------------------------*
+               Cut The Sticks 
+*-----------------------------------------------*
+
+def cutTheSticks(arr):
+    result = []
+    n = len(arr)
+    s = Counter(arr)
+
+    for i in sorted(s.keys()):
+        result.append(n)
+        n -= s[i]
+    return result
