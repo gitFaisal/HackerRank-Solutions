@@ -1,0 +1,19 @@
+def activityNotifications(expenditure, d):
+    d_que = []
+    notifications = 0
+    for i in range(0,len(expenditure)):
+        print(d_que)
+        if len(d_que) < d:
+            d_que.append(expenditure[i])
+
+        elif len(d_que) == d:
+            median = getMedian(d_que)
+  
+            if expenditure[i] >= (median *2):
+                notifications += 1 
+            d_que.remove(d_que[0])
+            d_que.append(expenditure[i])
+    return notifications
+
+-This solution passed the first few exams but when tested against large array of numbers, <br>
+I beleive it timed out on hackerank due to the time complexity of using sort() function over and over. <br>
