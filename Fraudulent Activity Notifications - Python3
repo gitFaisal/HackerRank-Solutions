@@ -1,3 +1,16 @@
+def getMedian(arr):
+    length = len(arr)
+    median = int(length/2)
+        if len(arr) % 2 == 0:
+            return (arr[median] + arr[median -1]) / 2
+        else:
+            return arr[median]
+
+
+
+
+
+
 def activityNotifications(expenditure, d):
     d_que = []
     notifications = 0
