@@ -1,0 +1,15 @@
+*-----------------------------------------------*
+           Climbing the Leaderboard
+*-----------------------------------------------*
+
+def climbingLeaderboard(ranked, player):
+    leaderboard = sorted(set(ranked), reverse = True)
+    l = len(leaderboard)
+    results = []
+   
+    for a in player:
+        while (l > 0) and (a >= leaderboard[l-1]):
+            l -= 1
+        results.append(l+1)
+   
+        return results
