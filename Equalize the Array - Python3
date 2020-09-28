@@ -1,0 +1,14 @@
+
+*-----------------------------------------------*
+             Equalize the Array
+*-----------------------------------------------*
+
+
+
+def equalizeArray(arr):
+    mode = max(set(arr), key=arr.count)
+    counter = 0
+    for i in arr:
+        if i == mode:
+            counter +=1
+    return (len(arr) - counter)
