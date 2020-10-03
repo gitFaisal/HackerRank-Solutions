@@ -13,5 +13,4 @@ def timeConversion(s):
     else:
         return str(int(s[:2]) + 12) + s[2:8]
 
------*
-This one needs to be reviewed...done way too fast in a "brute" way. 
+
