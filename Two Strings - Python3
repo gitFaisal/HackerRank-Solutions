@@ -1,0 +1,34 @@
+*-----------------------------------------------*
+                Two Strings
+*-----------------------------------------------*
+
+
+def twoStrings(s1, s2):
+    setOne = set(s1)
+    setTwo = set(s2)
+    matchedValues = setOne.intersection(setTwo)
+    if len(matchedValues) >= 1:
+        return 'YES'
+    else:
+        return 'NO'
+
+
+----*
+
+- I used the intersection() method to get the values the two
+ sets shared into the matchedValues variable. Then checked the 
+ length to see if we had matches.
+
+- Another way to do it is by:
+ return 'YES' if setOne & setTwo else 'NO'
+
+- This does basically the same thing as intersection, and the result 
+ of (setOne & setTwo) == setOne.intersection(setTwo).
+
+- I found the second method after searching for better ways to solve
+ the problem. Here is solution by sim321 on HackerRank:
+
+def twoStrings(s1, s2):
+    return 'YES' if set(s1) & set(s2) else 'NO'
+
+----*
