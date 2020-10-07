@@ -2,7 +2,6 @@
               Sequence Equation
 *-----------------------------------------------*
 
-
 def permutationEquation(p):
     results = []
     n = len(p)
