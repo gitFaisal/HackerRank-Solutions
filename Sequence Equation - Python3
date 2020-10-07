@@ -11,4 +11,5 @@ def permutationEquation(p):
         results.append(p.index(p.index(i)+1) + 1)
         print("p.index(i):",p.index(i))
         print(p.index(p.index(i)+1) + 1)
+
     return results
