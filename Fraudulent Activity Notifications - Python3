@@ -27,12 +27,12 @@ def activityNotifications(expenditure, d):
             d_que.remove(d_que[0])
             d_que.append(expenditure[i])
     return notifications
-
+----*
 - This solution passed the first few exams but when tested against large array of numbers, <br>
 I beleive it timed out on hackerank due to the time complexity of using sort() function over and over. <br>
 - An approach to get passed the timeout would be to use the bisect module to delete the first element <br>
 of the array and then keeping the array sorted add the next element in the correct position.<br>
-
+----*
 
 Second Solution: Does not time out because no repeated sorting is done. <br>
 
