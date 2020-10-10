@@ -10,9 +10,11 @@ def checkMagazine(magazine, note):
         
         
 ----*
+
 When subtracting Counter objects (ex: A - B) if B
 has all the values A does, then the result is an 
 empty Counter object. 
 If A has some values that B does not have, then we 
 get the remaining values in a Counter object.
+
 ----*
