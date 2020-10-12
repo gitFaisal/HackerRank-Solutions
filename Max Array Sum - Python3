@@ -1,0 +1,12 @@
+*-----------------------------------------------*
+            Max Array Sum (Medium)
+*-----------------------------------------------*
+
+def maxSubsetSum(arr):
+    n=len(arr)
+    x=[0]*n
+    x[0]=arr[0]
+    x[1]=max(arr[1],x[0])
+    for i in range(2,n):
+        x[i]=max(arr[i],x[i-1],arr[i]+x[i-2])
+    return x[-1] 
