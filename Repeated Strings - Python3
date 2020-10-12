@@ -1,0 +1,20 @@
+*-----------------------------------------------*
+               Repeated Strings
+*-----------------------------------------------*
+
+def repeatedString(s, n):
+    multiplyString = n // len(s) 
+    partialString = n % len(s)
+    countS = Counter(s)
+    partialS = Counter(s[:partialString])
+
+
+    return (countS['a'] * multiplyString) + (partialS['a'])
+    
+---*
+
+We have to multiply s to get the string to equal length of n, <br>
+but the problem is at times were left with a float number <br> 
+which prevents multiplication of strings. So we create a partialString <br>
+to deal with that. 
+---*
