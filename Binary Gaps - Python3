@@ -1,0 +1,13 @@
+Binary Gap Challenge from Codility 
+
+def solution(N):
+    binaryString = '{0:08b}'.format(N).lstrip('0').rstrip('0')
+    gapList = []
+    counter = 0
+    for i in binaryString:
+        if i == '0':
+            counter += 1 
+        elif i != 0:
+            gapList.append(counter)
+            counter = 0
+    return max(gapList)
