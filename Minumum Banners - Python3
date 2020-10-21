@@ -1,0 +1,24 @@
+Codility challenge Minum Banners: 
+Find a solution that takes an array and <br>
+returns size of 2 banners that will cover <br>
+all the buildings <br> 
+
+Solution:
+def solution(H):
+    N = len(H)
+    maxFromLeft = [0]*(N+1)
+    maxFromRight = [0]*(N+1)
+
+    cur_max = 0
+    for i in range(N):
+        cur_max = max(cur_max, H[i])
+        maxFromLeft[i+1] = cur_max
+    cur_max = 0
+    for i in range(N-1, -1, -1):
+        cur_max = max(cur_max, H[i])
+        maxFromRight[i] = cur_max
+
+    result = float("inf")
+    for i in range(N+1):
+        result = min(result, maxFromLeft[i]*i + maxFromRight[i]*(N-i))
+    return result
