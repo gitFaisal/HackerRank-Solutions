@@ -1,4 +1,6 @@
-Binary Gap Challenge from Codility 
+*-----------------------------------------------*
+      Binary Gap Challenge from Codility 
+*-----------------------------------------------*
 
 def solution(N):
     binaryString = '{0:08b}'.format(N).lstrip('0').rstrip('0')
