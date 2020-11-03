@@ -2,7 +2,6 @@
                 Sock Merchant
 *-----------------------------------------------*
 
-
 def sockMerchant(n, ar):
     count = 0
     ar.sort()
