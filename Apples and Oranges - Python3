@@ -1,0 +1,11 @@
+def countApplesAndOranges(s, t, a, b, apples, oranges):
+    a_count = 0
+    b_count = 0
+    for apple in apples:
+        if (apple+a >= s and apple+a <= t):
+            a_count += 1
+    for orange in oranges:
+        if (orange+b >= s and orange+b <= t):
+            b_count += 1 
+    print(a_count)
+    print(b_count)
