@@ -1,7 +1,7 @@
 Codility challenge Minum Banners: 
-Find a solution that takes an array and <br>
-returns size of 2 banners that will cover <br>
-all the buildings <br> 
+Find a solution that takes an array and
+returns size of 2 banners that will cover
+all the buildings 
 
 Solution:
 def solution(H):
